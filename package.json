@@ -1,8 +1,7 @@
 {
-  "name": "html-bricks-template",
+  "name": "gustavgb-com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My website built with html-bricks",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "html-bricks --watch",
