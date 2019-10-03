@@ -15,6 +15,10 @@ header h2 {
   justify-content: space-between;
 }
 
+header h2 > span::after {
+  content: "."
+}
+
 main {
   width: 100rem;
   margin: 0 auto;
@@ -23,12 +27,11 @@ main {
 
 .media-references {
   width: 30rem;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: stretch;
-  padding: 10rem 0 2rem;
+  margin: 10rem auto 2rem;
 }
 
 .media-references a {
@@ -36,7 +39,6 @@ main {
   padding: 2rem;
   font-size: 2.2rem;
   text-align: center;
-  background: linear-gradient(to bottom, #2492d9, #68b2e0);
   margin-bottom: 1.6rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 1rem 0.2rem #cecece;
@@ -48,6 +50,18 @@ main {
   left: 0;
   right: 0;
   width: 100%;
+}
+
+.media-references a:nth-child(1) {
+  background: linear-gradient(to bottom, #992e20, #722218);
+}
+
+.media-references a:nth-child(2) {
+  background: linear-gradient(to bottom, #cc2f1b, #a02515);
+}
+
+.media-references a:nth-child(3) {
+  background: linear-gradient(to bottom, #e37264, #b1584c);
 }
 
 .media-references a:last-child {
@@ -78,9 +92,10 @@ main {
     text-align: center;
     margin-bottom: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
   }
-  header h1 span:first-child {
-    margin-right: 1.5rem;
+  header h1 span {
+    margin: 0 0.75rem 0.5rem;
   }
   header h2 {
     font-size: 2rem;
@@ -92,7 +107,24 @@ main {
     display: block;
     margin: 1rem 0 0;
   }
+  header h2 > span::after {
+    content: ""
+  }
   main {
     width: 100%;
+  }
+  .media-references {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .media-references {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  main {
+    padding-top: 2rem;
   }
 }
