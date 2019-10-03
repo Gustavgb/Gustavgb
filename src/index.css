@@ -1,12 +1,12 @@
-h1 {
+header h1 {
   text-transform: uppercase;
   font-size: 10rem;
-  margin: 5rem 0;
+  margin: 0 0 5rem;
   display: flex;
   justify-content: space-between;
 }
 
-h2 {
+header h2 {
   text-transform: uppercase;
   font-size: 2.775rem;
   font-weight: 400;
@@ -18,23 +18,79 @@ h2 {
 main {
   width: 100rem;
   margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.media-references {
+  width: 30rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  padding: 10rem 0 2rem;
+}
+
+.media-references a {
+  position: relative;
+  padding: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #2492d9, #68b2e0);
+  margin-bottom: 1.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 1rem 0.2rem #cecece;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: all 0.2s ease-out;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.media-references a:last-child {
+  margin-bottom: 0;
+}
+
+.media-references a:visited {
+  color: white;
+}
+
+.media-references a:hover {
+  opacity: 1;
+  left: -10px;
+  right: 10px;
+  width: calc(100% + 20px);
 }
 
 @media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 10vw;
+  header {
+    margin: 0 2rem;
+    background-color: white;
+    padding: 4rem 2rem;
+    box-shadow: 0 0.2rem 1rem 0.2rem #cecece;
+    border-radius: 0.5rem;
+  }
+  header h1 {
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    justify-content: center;
   }
-  h2 {
-    font-size: 5vw;
+  header h1 span:first-child {
+    margin-right: 1.5rem;
+  }
+  header h2 {
+    font-size: 2rem;
     text-align: center;
-    margin: 1rem;
+    margin: 0;
     flex-direction: column;
   }
-  h2 > span {
+  header h2 > span {
     display: block;
-    margin: 1vw 0;
+    margin: 1rem 0 0;
   }
   main {
     width: 100%;
