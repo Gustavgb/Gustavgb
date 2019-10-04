@@ -9,8 +9,6 @@
   padding: 5rem 3rem;
   border-radius: 0.5rem;
   width: 60rem;
-  pointer-events: none;
-  display: block !important;
 }
 
 .info h1 {
@@ -38,6 +36,7 @@
   position: relative;
   z-index: 10000;
   pointer-events: none;
+  display: block !important;
 }
 
 #info-wrapper.open {
