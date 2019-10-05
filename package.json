@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "html-bricks": "^0.2.0",
+    "html-bricks": "^0.2.1",
+    "html-bricks-plugin-sass": "0.0.2",
     "npm-run-all": "^4.1.5",
     "serve": "^11.2.0"
   },

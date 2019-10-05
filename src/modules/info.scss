@@ -9,16 +9,34 @@
   padding: 5rem 3rem;
   border-radius: 0.5rem;
   width: 60rem;
-}
 
-.info h1 {
-  font-size: 2.5rem;
-  margin-top: 0;
-}
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
 
-.info p {
-  font-size: 2.2rem;
-  margin-bottom: 0;
+  p {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin: 4rem 0 0;
+    font-size: 2.2rem;
+    padding: 1.5rem 3rem;
+    background: linear-gradient(to bottom, #2aaf2a, #228a22);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: all 0.2s ease-out;
+    width: 100%;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .backdrop {
@@ -37,37 +55,19 @@
   z-index: 10000;
   pointer-events: none;
   display: block !important;
-}
 
-#info-wrapper.open {
-  pointer-events: all;
-}
+  &.open {
+    pointer-events: all;
 
-#info-wrapper.open > .backdrop {
-  opacity: 1;
-}
+    & > .backdrop {
+      opacity: 1;
+    }
 
-#info-wrapper.open > .info {
-  opacity: 1;
-  top: 50%;
-}
-
-.info .btn {
-  margin: 4rem 0 0;
-  font-size: 2.2rem;
-  padding: 1.5rem 3rem;
-  background: linear-gradient(to bottom, #2aaf2a, #228a22);
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  opacity: 0.85;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.info .btn:hover {
-  opacity: 1;
+    & > .info {
+      opacity: 1;
+      top: 50%;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
