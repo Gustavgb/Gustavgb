@@ -1,4 +1,5 @@
 {
+  "buildDir": "dist",
   "plugins": [
     "plugin-sass"
   ]
