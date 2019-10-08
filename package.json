@@ -15,9 +15,14 @@
   "devDependencies": {
     "html-bricks": "^0.3.2",
     "html-bricks-plugin-inline-css": "0.0.2",
-    "html-bricks-plugin-sass": "^0.1.0",
+    "html-bricks-plugin-postcss": "0.0.2",
+    "html-bricks-plugin-sass": "^0.1.2",
     "npm-run-all": "^4.1.5",
     "serve": "^11.2.0"
   },
-  "dependencies": {}
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    ">= 0.25%"
+  ]
 }
