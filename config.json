@@ -3,6 +3,7 @@
   "plugins": [
     "plugin-sass",
     "plugin-postcss",
-    "plugin-inline-css"
+    "plugin-inline-css",
+    "plugin-html-minify"
   ]
 }

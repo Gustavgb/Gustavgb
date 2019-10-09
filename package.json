@@ -14,7 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "html-bricks": "^0.3.2",
-    "html-bricks-plugin-inline-css": "0.0.2",
+    "html-bricks-plugin-html-minify": "0.0.2",
+    "html-bricks-plugin-inline-css": "0.0.3",
     "html-bricks-plugin-postcss": "0.0.2",
     "html-bricks-plugin-sass": "^0.1.2",
     "npm-run-all": "^4.1.5",
