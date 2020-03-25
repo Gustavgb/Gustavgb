@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "html-bricks": "^0.3.2",
     "html-bricks-plugin-html-minify": "0.0.2",
     "html-bricks-plugin-inline-css": "0.0.3",
     "html-bricks-plugin-postcss": "0.0.3",
@@ -25,5 +24,8 @@
     "last 2 versions",
     "not dead",
     ">= 0.25%"
-  ]
+  ],
+  "dependencies": {
+    "html-bricks": "^0.4.0"
+  }
 }
