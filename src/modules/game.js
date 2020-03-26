@@ -287,6 +287,7 @@ window.startGame = function startGame (initialLetters) {
     ctx.lineTo(player.w * 0.08, player.h * 0.35)
     const vel = keys.ArrowUp ? 0.3 : 0
     ctx.lineTo(0, player.h * (0.35 + vel))
+    ctx.fillStyle = 'white'
     ctx.fill()
     ctx.restore()
 
