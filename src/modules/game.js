@@ -1,8 +1,10 @@
 let gameStarted = false
-window.startGame = function startGame () {
+window.startGame = function startGame (initialLetters) {
   if (gameStarted) {
     return
   }
+
+  console.log(initialLetters)
 
   gameStarted = true
 
