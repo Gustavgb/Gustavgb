@@ -35,7 +35,7 @@ window.startGame = function startGame (initialLetters) {
   }
 
   const playerImg = new window.Image()
-  playerImg.src = '/modules/rocket.png'
+  playerImg.src = '/modules/rocket1585256898805.png'
 
   const bullets = []
 
