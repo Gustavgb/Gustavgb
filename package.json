@@ -26,6 +26,7 @@
     ">= 0.25%"
   ],
   "dependencies": {
-    "html-bricks": "^0.4.1"
+    "html-bricks": "^0.4.1",
+    "html-bricks-plugin-babel": "0.0.1"
   }
 }

@@ -72,7 +72,7 @@ function renderText (timestamp) {
       ctx.textAlign = 'right'
 
       rowTexts.reduce((lastY, text) => {
-        ctx.font = fontSize + 'px ' + fontFamily
+        ctx.font = `${fontSize}px ${fontFamily}`
         ctx.fillText(text, canvas.width, lastY)
 
         return lastY + fontSize
